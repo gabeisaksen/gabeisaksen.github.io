@@ -26,8 +26,6 @@ function getIonsList(quizNumber, fullIonsListParameter = fullIonsList) {
         Object.assign(finalList, singleList);
     };
 
-    displayHomepage = false;
-
     return finalList;
 };
 
