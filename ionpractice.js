@@ -32,14 +32,20 @@ function getIonsList(quizNumber, fullIonsListParameter = fullIonsList) {
 };
 
 //determines when to display the homepage
-let displayHomepage = true;
-
 const homepageElement = document.getElementById("homepage");
 const quizElement = document.getElementById("quiz");
-if (displayHomepage) {
+
+let ionsList = {};
+
+function showHomepage() {
     homepageElement.hidden = false;
     quizElement.hidden = true;
-} else {
+}
+
+function startQuiz(quizNumber) {
+    ionsList = getIonsList(quizNumber);
     homepageElement.hidden = true;
-    quizElement.hidden = false
-};
+    quizElement.hidden = false;
+}
+
+showHomepage();
