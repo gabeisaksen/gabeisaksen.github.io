@@ -22,8 +22,24 @@
 
     <div id="quiz">
         <h1>
-            Enter the answer below
+            <div id="question"></div>
         </h1>
+
+        <div id="caption">Enter the matching ion name/symbol to the one above</div>
+
+        <input type="text" id="userAnswer" name="answer" placeholder="type here..."><span id="modeLabel"></span>
+
+        <br><div id="response"></div>
+        <br><button type="button" id="nextQuestionButton" onclick="showNextQuestion()">Next Question</button>
+
+        <br><br><br><button type="button" onclick="showHomepage()">Back to Home</button>
+
+        <br><br>
+        <div id="scriptModeInstructions">
+            <span>press '^' to type a superscript</span><br>
+            <span>press '_' to type a subscript</span><br>
+            <span>press 'tab' to return to normal script</span><br>
+        </div>
     </div>
 </body>
 
