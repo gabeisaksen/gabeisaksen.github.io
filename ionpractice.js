@@ -1,15 +1,29 @@
 //creates objects for pairs of ion names and symbols
 let ions1Names = {
-    "cadmium ion": "Cd^+2"
+    "cadmium ion": "Cd^+2", "zinc ion": "Zn^+2", "silver ion": "Ag^+1", "ammonium": "NH_4^+1", "acetate": "C_2H_3O_2^-1", "bicarbonate": "HCO_3^-1", "perchlorate": "ClO_4^-1", "chlorate": "ClO_3^-1", "chlorite": "ClO_2^-1", "hypochlorite": "ClO^-1", "hydroxide": "OH^-1", "plumbous ion": "Pb^+2", "plumbic ion": "Pb^+4", "Hydrogen": "H", "Carbon": "C", "Silicon": "Si", "Lithium": "Li", "Sodium": "Na", "Boron": "B", "Aluminum": "Al", "Mercury": "Hg", "Potassium": "K", "Beryllium": "Be", "Copper": "Cu"
 };
 let ions1Symbols = Object.fromEntries(
     Object.entries(ions1Names).map(([key, value]) => [value, key])
 );
 
 let ions2Names = {
-    "nitrite": "NO_2^-1"
+    "nitrite": "NO_2^-1", "nitrate": "NO_3^-1", "cyanide": "CN^-1", "cyanate": "OCN^-1", "thiocyanate": "SCN^-1", "stannous ion": "Sn^+2", "stannic ion": "Sn^+4", "Magnesium": "Mg", "Zinc": "Zn", "Cadmium": "Cd", "Gold": "Au", "Calcium": "Ca", "Strontium": "Sr", "Barium": "Ba", "Radium": "Ra", "Chromium": "Cr", "Tungsten": "W", "Silver": "Ag"
 };
 let ions2Symbols = Object.fromEntries(
+    Object.entries(ions2Names).map(([key, value]) => [value, key])
+);
+
+let ions3Names = {
+    "permanganate": "MnO_4^-1", "carbonate": "CO_3^-2", "chromate": "CrO_4^-2", "dichromate": "Cr_2O_7^-2", "peroxide": "O_2^-2", "sulfite": "SO_3^-2", "sulfate": "SO_4^-2", "mercurous ion": "Hg_2^+2", "mercuric": "Hg^+2", "Manganese": "Mn", "Iron": "Fe", "Tin": "Sn", "Lead": "Pb", "Nitrogen": "N", "Phosphorous": "P", "Bismuth": "Bi", "Oxygen": "O", "Sulfur": "S", "Fluorine": "F", "Cesium": "Cs"
+};
+let ions3Symbols = Object.fromEntries(
+    Object.entries(ions2Names).map(([key, value]) => [value, key])
+);
+
+let ions4Names = {
+    "phosphate": "PO_4^-3", "phosphite": "PO_3^-3", "bisulfate": "HSO_4^-1", "oxalate": "C_2O_4^-2", "cuprous ion": "Cu^+1", "cupric ion": "Cu^+2", "ferrous ion": "Fe^+2", "ferric ion": "Fe^+3", "Chlorine": "Cl", "Bromine": "Br", "Iodine": "I", "Helium": "He", "Neon": "Ne", "Argon": "Ar", "Krypton": "Kr", "Radon": "Rn", "Cobalt": "Co", "Nickel": "Ni"
+};
+let ions4Symbols = Object.fromEntries(
     Object.entries(ions2Names).map(([key, value]) => [value, key])
 );
 
