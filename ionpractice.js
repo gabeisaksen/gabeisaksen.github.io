@@ -17,17 +17,22 @@ let ions3Names = {
     "permanganate": "MnO_4^-1", "carbonate": "CO_3^-2", "chromate": "CrO_4^-2", "dichromate": "Cr_2O_7^-2", "peroxide": "O_2^-2", "sulfite": "SO_3^-2", "sulfate": "SO_4^-2", "mercurous ion": "Hg_2^+2", "mercuric": "Hg^+2", "Manganese": "Mn", "Iron": "Fe", "Tin": "Sn", "Lead": "Pb", "Nitrogen": "N", "Phosphorous": "P", "Bismuth": "Bi", "Oxygen": "O", "Sulfur": "S", "Fluorine": "F", "Cesium": "Cs"
 };
 let ions3Symbols = Object.fromEntries(
-    Object.entries(ions2Names).map(([key, value]) => [value, key])
+    Object.entries(ions3Names).map(([key, value]) => [value, key])
 );
 
 let ions4Names = {
     "phosphate": "PO_4^-3", "phosphite": "PO_3^-3", "bisulfate": "HSO_4^-1", "oxalate": "C_2O_4^-2", "cuprous ion": "Cu^+1", "cupric ion": "Cu^+2", "ferrous ion": "Fe^+2", "ferric ion": "Fe^+3", "Chlorine": "Cl", "Bromine": "Br", "Iodine": "I", "Helium": "He", "Neon": "Ne", "Argon": "Ar", "Krypton": "Kr", "Radon": "Rn", "Cobalt": "Co", "Nickel": "Ni"
 };
 let ions4Symbols = Object.fromEntries(
-    Object.entries(ions2Names).map(([key, value]) => [value, key])
+    Object.entries(ions4Names).map(([key, value]) => [value, key])
 );
 
-let fullIonsList = [ions1Names, ions1Symbols, ions2Names, ions2Symbols];
+let fullIonsList = [
+    ions1Names, ions1Symbols,
+    ions2Names, ions2Symbols,
+    ions3Names, ions3Symbols,
+    ions4Names, ions4Symbols
+];
 
 //using the quiz number as a parameter, this function returns an object with all the ions belonging to that quiz
 function getIonsList(quizNumber, fullIonsListParameter = fullIonsList) {
